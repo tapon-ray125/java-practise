@@ -1,6 +1,13 @@
 function cashOut(money){
+    if(money<0 || "strin" !== "number" ){
+        return"Invalid";
+    }
+        
+    
     let charge = money * (1.75 /100);
-    return charge; 
+    let fixedcharge = charge.toFixed(2);
+    let finalCharge = parseFloat(fixedcharge);
+    return finalCharge ; 
 
 }
-console.log(cashOut(2000));
+console.log(cashOut("mewauu"));
